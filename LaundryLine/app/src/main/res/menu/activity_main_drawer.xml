@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_myprofile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="My Profile" />
+    <item
+        android:id="@+id/nav_ratecard"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        android:title="Rate card" />
+    <item
+        android:id="@+id/nav_monthlycombo"
+        android:icon="@drawable/ic_card_giftcard_black_24dp"
+        android:title="Monthly combo" />
+    <item
+        android:id="@+id/nav_neworder"
+        android:icon="@drawable/ic_local_grocery_store_black_24dp"
+        android:title="New Order" />
+    <item
+        android:id="@+id/nav_trackmyorder"
+        android:icon="@drawable/ic_local_shipping_black_24dp"
+        android:title="Track your order" />
+    <item
+        android:id="@+id/nav_referafriend"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="Refer a friend" />
+</group>
+
+<item android:title="Communicate">
+    <menu>
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/ic_comment_black_24dp"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="Contact us" />
+    </menu>
+</item>
+    <item
+        android:icon="@drawable/ic_my_location_black_24dp"
+        android:id="@+id/nav_log_out"
+        android:title="Log Out"/>
+</menu>

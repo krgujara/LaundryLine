@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.retrofitpostexample.ConfirmOrder">
+
+    <include layout="@layout/toolbar"
+      android:id="@+id/confirm_toolbar"
+        />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listViewConfirmOrder"
+        android:layout_below="@id/confirm_toolbar"
+        android:layout_above="@+id/buttonConfirm"
+        >
+    </ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Cost"
+            android:textSize="16dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/windowBackground"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/estimatedCost"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/buttonConfirm" />
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Confirm"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/textColorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/estimatedCost" />
+</RelativeLayout>

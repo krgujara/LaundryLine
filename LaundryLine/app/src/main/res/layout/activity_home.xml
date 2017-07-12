@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relhome"
+    tools:context="com.example.android.retrofitpostexample.HomeActivity">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/home_tool_bar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/washng"
+        android:layout_marginTop="24dp"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/home_tool_bar"
+        android:src="@drawable/circle2" />
+
+
+    <TextView
+        android:id="@+id/textViewMarqToLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:scrollHorizontally="true"
+        android:text="Welcome To"
+        android:textColor="#4B0082"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewMarqToRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textViewMarqToLeft"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:scrollHorizontally="true"
+        android:text="Laundry Line"
+        android:textColor="#4B0082"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewMarqToRight"
+        android:layout_marginTop="70dp"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="The Complete Solution To Your Clothes"
+        android:textStyle="italic"
+        android:textColor="#4B0082"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/textInfo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewMarqToRight"
+        android:layout_marginTop="100dp"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Let we wash it, your time is precious !"
+        android:textStyle="italic"
+        android:textColor="#4B0082"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/placeorderhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rounded_buuton"
+        android:text="Place an Order"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

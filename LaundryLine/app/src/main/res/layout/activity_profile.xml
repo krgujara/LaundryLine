@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.retrofitpostexample.ProfileActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/profile_tool"/>
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="120dp"
+    android:textColor="#A9A9A9"
+    android:id="@+id/myprofile_name"/>
+<TextView
+    android:layout_width="216dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/myprofile_name_edittext"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="150dp"
+    android:layout_alignParentStart="true"
+    android:textAlignment="textStart"
+    android:editable="false"
+
+    android:textColor="@color/navigationBarColor"
+    android:textSize="16dp"
+    android:layout_toEndOf="@+id/myprofile_name_textview"
+    android:layout_weight="0.15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile No"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="180dp"
+        android:textColor="#A9A9A9"
+        android:id="@+id/myprofile_mobileno"/>
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myprofile_mobileno_edittext"
+    android:layout_marginTop="200dp"
+    android:layout_alignParentStart="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:editable="false"
+    android:textAlignment="textStart"
+    android:textColor="@color/navigationBarColor"
+    android:textSize="16dp"
+    android:layout_toEndOf="@+id/myprofile_name_textview" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="240dp"
+        android:textColor="#A9A9A9"
+        android:id="@+id/myprofile_"/>
+
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myprofile_email_edittext"
+    android:layout_marginTop="270dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:editable="false"
+    android:layout_alignParentStart="true"
+    android:textAlignment="textStart"
+    android:textColor="@color/navigationBarColor"
+    android:textSize="16dp"
+    android:layout_toEndOf="@+id/myprofile_name_textview" />
+
+
+
+<!--
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myprofile_address_edittext"
+    android:layout_marginTop="280dp"
+    android:layout_alignParentStart="true"
+    android:textAlignment="textStart"
+    android:textColor="@color/navigationBarColor"
+    android:textSize="16dp"
+     />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Profile_changeAddress"
+    android:text="Change Address "
+    android:drawableRight="@drawable/ic_border_color_black_24dp"
+    android:textColor="#FF708D"
+    android:layout_below="@+id/myprofile_address_edittext"
+    android:layout_alignStart="@+id/textView" />
+
+-->
+</RelativeLayout>

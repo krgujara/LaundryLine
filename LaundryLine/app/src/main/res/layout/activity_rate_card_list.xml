@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.retrofitpostexample.RateCardList">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/ratecard_tool"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratecard_tool"
+        android:id="@+id/listViewRateDetails"
+        android:layout_above="@+id/buttonNext"
+        >
+    </ListView>
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Place Order"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/textColorPrimary"
+        android:width="170dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

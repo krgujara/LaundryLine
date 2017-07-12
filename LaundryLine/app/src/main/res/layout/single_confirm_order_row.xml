@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/confirm_order_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Product Name"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/confirm_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:text="Rs"
+        android:paddingBottom="16dp"
+        android:layout_below="@id/confirm_order_item"
+        android:gravity="center"
+
+/>
+
+    <TextView
+        android:id="@+id/confirm_order_quantity"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:ems="2"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/confirm_order_item" />
+
+
+</RelativeLayout>

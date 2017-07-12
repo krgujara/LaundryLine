@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.android.retrofitpostexample.MainActivity">
+<include layout = "@layout/toolbar"
+    android:id="@+id/my_toolbar"/>
+
+        <ImageView android:src="@drawable/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/registerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_person_black_24dp1"
+                android:drawablePadding="20dp"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/registerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/ic_email_black_24dp1"
+                android:drawablePadding="20dp"
+                android:hint="Email" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Mobile Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/registerMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Mobile"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:drawablePadding="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/registerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/ic_vpn_key_black_24dp1"
+                android:drawablePadding="20dp"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Create Account"/>
+
+        <TextView android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already a member? Login"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+    </LinearLayout>
+</ScrollView>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:orientation="vertical"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bluee_theme"
+
+tools:context="com.example.android.retrofitpostexample.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        &lt;!&ndash; View Title Label &ndash;&gt;
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/register_title"
+            android:background="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textStyle="bold" />
+
+        &lt;!&ndash; Name TextField &ndash;&gt;
+
+
+        <EditText
+            android:id="@+id/registerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawableLeft="@drawable/ic_person_black_24dp1"
+            android:drawablePadding="20dp"
+            android:hint="Name"
+            android:textColor="#909090"
+
+            />
+
+        &lt;!&ndash; Email TextField &ndash;&gt;
+
+        <EditText
+            android:id="@+id/registerEmail"
+            android:layout_width="fill_parent"
+            android:drawableLeft="@drawable/ic_email_black_24dp1"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawablePadding="20dp"
+            android:layout_height="wrap_content"
+
+            android:textColor="#909090"
+            android:hint="Email ID"
+            android:inputType="textEmailAddress" />
+
+        &lt;!&ndash; Password TextField &ndash;&gt;
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#909090"
+            android:padding="@dimen/activity_vertical_margin"
+            android:hint="Password"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp1"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword" />
+
+        &lt;!&ndash; Mobile TextField &ndash;&gt;
+
+        <EditText
+            android:id="@+id/registerMobile"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_width="fill_parent"
+
+            android:textColor="#909090"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:drawablePadding="20dp"/>
+
+        &lt;!&ndash; Referal Code TextField &ndash;&gt;
+
+&lt;!&ndash;
+        <EditText
+            android:id="@+id/registerReferalCode"
+            android:layout_width="fill_parent"
+
+            android:textColor="#909090"
+            android:layout_height="wrap_content"
+            android:hint="Referal Code(if any)"
+            android:padding="@dimen/activity_vertical_margin"
+            android:drawableLeft="@drawable/ic_card_giftcard_black_24dp1"
+            android:drawablePadding="20dp" />
+
+&ndash;&gt;
+
+
+        &lt;!&ndash; Error message &ndash;&gt;
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#e30000"
+            android:padding="@dimen/activity_vertical_margin"
+
+            android:textStyle="bold" />
+
+        &lt;!&ndash; Link to Login Screen &ndash;&gt;
+
+    </LinearLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/btnLinkToLoginScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:onClick="navigatetoLoginActivity"
+        android:text="Already a member? Login"
+        android:textColor="#228b22"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="96dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff6347"
+        android:onClick="registerUser"
+        android:text="@string/btnRegister"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_above="@+id/btnLinkToLoginScreen"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>-->

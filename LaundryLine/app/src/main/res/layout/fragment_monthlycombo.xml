@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.retrofitpostexample.MonthlycomboFragment">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dp"
+        android:text="Monthly Combo"
+        android:background="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/homeimage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wash any 40 clothes in just 300 Rs for every month"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="270dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:id="@+id/button1Book"
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>

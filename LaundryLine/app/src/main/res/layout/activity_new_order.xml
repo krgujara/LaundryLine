@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.android.retrofitpostexample.NewOrderActivity">
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#CC3366"
+        android:text="Minimum Bill value would be Rs.150"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="4dp">
+
+
+    <TextView
+        android:id="@+id/place_order_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:layout_marginTop="16dp"
+        android:paddingRight="16dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/place_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/place_order_item"
+    />
+
+    <Button
+        android:id="@+id/place_order_minus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/place_order_quantity"
+        android:layout_toStartOf="@+id/place_order_quantity"
+        android:background="@drawable/rounded_corner_button"
+        android:text="-"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/place_order_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/place_order_plus"
+       android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toStartOf="@+id/place_order_plus"
+        android:background="#FFFFFF"
+        android:ems="2"
+        android:gravity="center"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/place_order_plus"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/place_order_item"
+        android:background="@drawable/rounded_corner_button"
+        android:text="+"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

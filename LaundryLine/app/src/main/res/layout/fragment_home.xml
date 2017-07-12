@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluee_theme"
+    tools:context="com.example.android.retrofitpostexample.HomeFragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/homepageimage"
+        android:id="@+id/basket_image"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Laundry Line"
+        android:scrollHorizontally="true"
+
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/welcome_to_laundry_line"
+        android:textSize="30dp"
+        android:textColor="#4B0082"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/placeorderhome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Place an Order"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="#ffffff"
+        android:background="#f4511e"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp" />
+
+
+</RelativeLayout>
